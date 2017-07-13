@@ -7,7 +7,8 @@ python:
 ]
 # command to install dependencies
 install: [
-  "pip install -e ."
+  "pip install -e .",
+  "pip install pytest"
 ]
 # command to run tests
 script: pytest

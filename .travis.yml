@@ -1,7 +1,9 @@
 language: python
 python:
   - "2.7"
-
+"before_install": [
+  "python -m pip install --upgrade setuptools pip virtualenv"
+]
 # command to install dependencies
 install: [
   "sudo apt-get install python-opencv",

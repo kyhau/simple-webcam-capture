@@ -2,8 +2,8 @@
 Reference: https://codeplasma.com/2012/12/03/getting-webcam-images-with-python-and-opencv-2-for-real-this-time/
 """
 import cv2
-import os
 import sys
+from os.path import dirname, join, realpath
 
 # TODO Check if Camera 0 is the webcam on your machine
 DEFAULT_CAMERA_PORT = 0
@@ -39,14 +39,13 @@ class CameraMan():
 
         # Ramp the camera - these frames will be discarded and are only used to
         # allow v4l2 to adjust light levels, if necessary
-        for i in xrange(ramp_frames):
+        for i in range(ramp_frames):
             temp = self.get_image(camera)
 
         print("Taking image...")
 
         # Take the actual image we want to keep
         camera_capture = self.get_image(camera)
-        file = "test_image.png"
 
         # A nice feature of the imwrite method is that it will automatically
         # choose the correct format based on the file extension you provide.
@@ -59,10 +58,10 @@ class CameraMan():
         print("Image saved to {}".format(image_name))
 
 
-def main(argv):
+def main():
     app = CameraMan()
-    myimage = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_image.png')
+    myimage = join(dirname(dirname(realpath(__file__))), 'test_image.png')
     app.take_picture(image_name=myimage)
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv))
+    sys.exit(main())

@@ -1,19 +1,25 @@
 # simple-cameraman
 
-Simple python script for capturing an image from a webcam
+Simple python script for capturing an image from a webcam using [OpenCV 2](http://opencv.org/). 
 
-## Build
+## Build and run
 
-1. Install [OpenCV 2](http://opencv.org/) (not in pypi):
+`Python 2.7`: [![Build Status](https://travis-ci.org/kyhau/simple-cameraman.svg?branch=master)](https://travis-ci.org/kyhau/simple-cameraman)
 
-    1. On Debian-based systems: `sudo apt-get install python-opencv` 
-    1. On Windows: Download [opencv_python-2.4.13.2](http://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv) into a folder (e.g. named `dist_ext`)
+Linux
 
-1. Install python dependencies
+```bash
+virtualenv env
+. env/bin/activate
+python -m pip install -r requirements.txt
+cameraman
+```
 
-   ```
-   virtualenv env
-   env\Scripts\activate
-   pip install --find-links dist_ext -r requirements.txt
-   
-   ```
+Windows
+
+```cmd
+virtualenv env
+env\Scripts\activate
+python -m pip install -e .
+cameraman
+```

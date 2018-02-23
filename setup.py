@@ -18,8 +18,8 @@ __summary__ = "Simple python script for capturing an image from a webcam."
 __uri__ = "https://github.com/kyhau/simple-cameraman"
 
 __requirements__ = [
-    'opencv-python>=3.2.0.7',
-    'numpy>=1.11.3+mkl'
+    "opencv-python>=3.4.0.12",
+    "numpy>=1.11.3+mkl"
 ]
 
 with open(os.path.join(base_dir, "README.md")) as f:
@@ -30,18 +30,18 @@ setup(
     version=__version__,
     description=__summary__,
     long_description=long_description,
-    packages=find_packages(exclude=['tests']),
+    packages=find_packages(exclude=["tests"]),
     author=__author__,
     author_email=__email__,
     url=__uri__,
     zip_safe=False,
     install_requires=__requirements__,
     data_files=[
-        ('', ['ReleaseNotes.md']),
+        ("", ["ReleaseNotes.md"]),
     ],
     entry_points={
-        'console_scripts': [
-            'cameraman = simplecameraman.cameraman:main'
-          ]
-      },
+        "console_scripts": [
+            "cameraman = simplecameraman.cameraman:main"
+        ]
+    },
 )

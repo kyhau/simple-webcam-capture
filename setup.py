@@ -1,4 +1,3 @@
-from __future__ import absolute_import, division, print_function
 from setuptools import setup, find_packages
 import os
 
@@ -9,7 +8,7 @@ if os.environ.get("BUILD_LIB") == "1":
 
 base_dir = os.path.dirname(__file__)
 
-__author__ = "Kayan Hau"
+__author__ = "Kay Hau"
 __email__ = "virtualda@gmail.com"
 
 __title__ = "simplecameraman"

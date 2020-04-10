@@ -4,16 +4,16 @@ Simple python script for capturing an image from a webcam using [OpenCV 2](http:
 
 ## Build and run
 
-`Python 2.7, Python 3.6`: [![Build Status](https://travis-ci.org/kyhau/simple-cameraman.svg?branch=master)](https://travis-ci.org/kyhau/simple-cameraman)
+`Python 3.8`: [![Build Status](https://travis-ci.org/kyhau/simple-cameraman.svg?branch=master)](https://travis-ci.org/kyhau/simple-cameraman)
 
 Linux
 
 ```bash
-apt-get update && apt-get install -y libsm6 libxext6
+sudo apt-get update && sudo apt-get install -y libsm6 libxext6 libxrender1
 
 virtualenv env
 . env/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -e .
 cameraman
 ```
 

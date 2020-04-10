@@ -68,5 +68,6 @@ def main():
     myimage = join(dirname(dirname(realpath(__file__))), "test_image.png")
     app.take_picture(image_name=myimage)
 
+
 if __name__ == "__main__":
     sys.exit(main())

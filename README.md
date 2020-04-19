@@ -4,7 +4,9 @@ Simple python script for capturing an image from a webcam using [OpenCV 2](http:
 
 ## Build and run
 
-`Python 3.8`: [![Build Status](https://travis-ci.org/kyhau/simple-cameraman.svg?branch=master)](https://travis-ci.org/kyhau/simple-cameraman)
+`Python 3.8`: 
+[![githubactions](https://github.com/kyhau/simple-cameraman/workflows/Build-Test/badge.svg)](https://github.com/kyhau/simple-cameraman/actions)
+[![travisci](https://travis-ci.org/kyhau/simple-cameraman.svg?branch=master)](https://travis-ci.org/kyhau/simple-cameraman)
 
 Linux
 

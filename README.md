@@ -1,4 +1,4 @@
-# simple-cameraman
+# simple-webcam-capture
 
 Simple python script for capturing an image from a webcam using [OpenCV 2](http://opencv.org/). 
 

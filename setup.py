@@ -12,7 +12,7 @@ __uri__ = "https://github.com/kyhau/simple-cameraman"
 
 __requirements__ = [
     "opencv-python~=4.2",
-    "numpy~=1.18",
+    "numpy>=1.18,<3.0",
 ]
 
 __entry_points__ = {

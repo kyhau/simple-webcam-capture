@@ -11,7 +11,7 @@ __summary__ = "Simple python script for capturing an image from a webcam."
 __uri__ = "https://github.com/kyhau/simple-cameraman"
 
 __requirements__ = [
-    "opencv-python~=4.2",
+    "opencv-python~=5.0",
     "numpy>=1.18,<3.0",
 ]
 
